@@ -20,26 +20,37 @@ KAHANI helps content creators generate:
 
 ## Project Structure
 
+```
 kahani/
-├── backend/              # FastAPI backend
+├── backend/                    # FastAPI backend
 │   ├── app/
-│   │   ├── routes/
-│   │   ├── models/
-│   │   └── schemas/
-│   ├── tests/
-│   ├── main.py
-│   ├── config.py
-│   └── requirements.txt
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   └── package.json
-├── docs/
-│   ├── API.md
-│   └── DATABASE.md
-├── .gitignore
-├── LICENSE
-└── README.md
+│   │   ├── routes/            # API endpoints
+│   │   ├── models/            # SQLAlchemy models
+│   │   └── schemas/           # Pydantic schemas
+│   ├── tests/                 # Unit tests
+│   ├── __init__.py
+│   ├── main.py                # FastAPI app entry point
+│   ├── config.py              # Configuration & env vars
+│   ├── requirements.txt        # Python dependencies
+│   └── Dockerfile             # Docker configuration
+│
+├── frontend/                   # React TypeScript frontend
+│   ├── public/                # Static assets
+│   ├── src/                   # React components
+│   ├── package.json           # Node dependencies
+│   └── Dockerfile             # Docker configuration
+│
+├── docs/                      # Documentation
+│   ├── api/                   # API docs
+│   ├── database/              # DB schema
+│   ├── API.md                 # API endpoints documentation
+│   └── DATABASE.md            # Database schema
+│
+├── .env.example               # Environment variables template
+├── .gitignore                 # Git ignore rules
+├── LICENSE                    # MIT License
+└── README.md                  # This file
+```
 
 ---
 
